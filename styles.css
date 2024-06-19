@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Handfine';
+    src: url('fonts/Handfine.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for navbar */
+    color: #fff;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background for nav menu */
+}
+
+.nav-item {
+    padding: 15px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 5); /* Darker semi-transparent background on hover */
+}
+
+.nav-item a:hover {
+    color: #ffd700;
+}
+
+section {
+    padding: 0; /* Remove default padding */
+    margin: 0;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1;
+}
+
+section > * {
+    position: relative;
+    z-index: 2;
+}
+
+#home {
+    background-image: url('images/home.jpg');
+}
+
+#about {
+    background-image: url('images/about.jpg');
+}
+
+#services {
+    background-image: url('images/services.jpg');
+    padding: 100px; /* Increase padding around content in services section */
+}
+
+#contact {
+    background-image: url('images/contact.jpg');
+}
+
+h1, h2 {
+    font-family: 'Handfine', cursive;
+    color: #ffd700;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6; /* Adjust line height for better readability */
+}
